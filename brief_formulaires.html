@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brief Formulaire HTML Simplon HDF</title>
+</head>
+
+<body>
+  <h1>Veuillez remplir le formulaire</h1>
+  <form>
+    <fieldset>
+      <!-- J'utilise fieldset pour avoir un minimum de mise en page et faire des petits cadres -->
+      <div>
+        <label for="prenameinput">Votre Prénom</label>
+        <input type="text" name="Prenom" id="prenameinput" placeholder="Prenom">
+
+        <!-- For utiliser pour le type d'input, name pour savoir comment le nommé et l'id sert d'identifiant il permet de lier le label et l'input -->
+      </div>
+
+      <div>
+        <label for="nameinput">Votre Nom</label>
+        <input type="text" name="Nom" id="nameinput" placeholder="Nom">
+      </div>
+
+      <div>
+        <label for="ageinput">Âge</label>
+        <input type="number" name="Age" id="ageinput" step="1" placeholder="Age">
+      </div>
+
+      <div>S
+        <label>Sexe</label>
+        <div>
+          <input type="radio" name="sexe" id="masculin" checked>
+          <label for="masculin">Masculin</label>
+        </div>
+        <div>
+          <input type="radio" name="sexe" id="feminin">
+          <label for="feminin">Féminin</label>
+        </div>
+      </div>
+
+      <div>
+        <label for="emailinput">Votre email</label>
+        <input type="email" name="email" id="emailinput" placeholder="Votre@email.fr">
+      </div>
+      <div>
+        <label for="adresseinput">Votre adresse</label>
+        <input type="text" name="adresse" id="adresseinput" placeholder="00 rue de">
+      </div>
+
+      <div>
+        <label for="codepostalinput">Code postal</label>
+
+        <input type="text" name="CodePostal" id="codepostalinput" value="Code Postal" size="5" maxlength="5"
+          pattern="[0-9]{5}">
+      </div>
+
+      <div>
+        <label for="villeinput">Ville</label>
+        <input type="text" name="ville" id="villeinput" placeholder="Paris">
+      </div>
+
+      <div>
+        <label for="metierinput">Métier</label>
+
+        <select name="metier" id="metierinput">
+          <option value="">-Choisir une option-</option>
+          <option value="Developpeur Web">Developpeur Web</option>
+          <option value="Professeur">Professeur</option>
+          <option value="Infirmier">Infirmier</option>
+          <option value="Routier">Routier</option>
+          <option value="Vendeur">Vendeur</option>
+          <option value="Cuisinier">Cuisinier</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="nationaliteinput">Nationalité</label>
+        <select name="nationalite" id="nationaliteinput">
+          <option selected value="Française">Française</option>
+          <option value="Portugaise">Portugaise</option>
+          <option value="Italienne">Italienne</option>
+          <option value="Belge">Belge</option>
+          <option value="Suisse">Suisse</option>
+          <option value="Espagnole">Espagnole</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="datedenaissanceinput">Votre date de naissance</label>
+        <input type="date" name="datedenaissance" id="datedenaissanceinput">
+      </div>
+
+      <div>
+        <label for="paysdenaissanceinput">Pays de naissance</label>
+        <input type="text" name="Paysdenaissance" id="paysdenaissanceinput" placeholder="France">
+      </div>
+
+      <div>
+        <label for="numerosecuinput">Numéro de sécurité sociale</label>
+        <input type="text" name="numerodesecuritesociale" id="numerosecuinput" maxlength="13"
+          placeholder="0000001111112">
+      </div>
+
+      <div>
+        <label for="passeportinput">Passeport</label>
+        <input type="text" name="passeport" id="passeportinput" maxlength="9" placeholder="123456789">
+      </div>
+
+      <div>
+        <label for="datededelivranceinput">Date de délivrance du passeport</label>
+        <input type="date" name="datededelivrance" id="datededelivranceinput">
+      </div>
+
+      <div>
+        <label for="datedevaliditeinput">Date de validité du passeport</label>
+        <input type="date" name="datedevalidite" id="datedevaliditeinput">
+        <br>
+        <button> <strong>Envoyer le formulaire</strong> </button>
+      </div>
+
+    </fieldset>
+  </form>
+</body>
+
+</html>
